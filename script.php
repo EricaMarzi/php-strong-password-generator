@@ -11,7 +11,7 @@ include __DIR__ . '/function/function.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@ include __DIR__ . '/function/function.php';
             <div class="card p-5">
                 <p class="new-password text-center">  <?= $new_password ?> </p>
                 <form action="index.html">
-                    <button type="submit" class="btn-style">Back</button>
+                    <button type="submit" class="btn-style">Torna indietro</button>
                 </form>
             </div>
         </main>
