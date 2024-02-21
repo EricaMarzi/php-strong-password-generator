@@ -1,3 +1,5 @@
+/*? Geneal */
+
 body {
     background-color: #caedf7;
 }
@@ -18,13 +20,6 @@ header .title {
     border-bottom: 2px solid #f0f2f5;
 }
 
-.input-number {
-    width: 50%;
-}
-
-.input-checkbox {
-    width: 50%;
-}
 
 .separator {
     width: 100%;
@@ -44,4 +39,26 @@ header .title {
 
 .btn-style:hover {
     background-color: #c21e1e;
+}
+
+
+/*? Home Page*/
+.input-number {
+    width: 50%;
+}
+
+.input-checkbox {
+    width: 50%;
+}
+
+/*? Password Page */
+
+
+
+.new-password {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 0;
+
+    font-weight: 600;
 }
