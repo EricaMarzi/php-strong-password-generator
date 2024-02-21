@@ -6,21 +6,14 @@ $symbols = ['!', '£', '%', '&', '/', '#', '@', '*', '§', 'ù', 'ç'];
 
 // Unire gli array
 $characters = array_merge($alphabeth, $numbers, $symbols);
-// var_dump($characters);
 
-// $new_password = array_rand($characters, 10);
-// var_dump($new_password);
 
-// $key = array_rand($characters);
-// $v = $characters[$key];
-// $new_password = [];
-// array_push($new_password, $v);
-// var_dump($new_password);
+$new_password = [];
 
+// Ciclo per randomizzare e pushare
 for ($i = 0; $i < 10; $i++){
     $key = array_rand($characters);
     $v = $characters[$key];
-    $new_password = [];
     array_push($new_password, $v);
     
 };
