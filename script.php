@@ -1,5 +1,7 @@
 <?php 
 
+$user_number = $_GET['userNumber'];
+
 $alphabeth = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 $numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 $symbols = ['!', '£', '%', '&', '/', '#', '@', '*', '§', 'ù', 'ç'];
@@ -8,19 +10,18 @@ $symbols = ['!', '£', '%', '&', '/', '#', '@', '*', '§', 'ù', 'ç'];
 $characters = array_merge($alphabeth, $numbers, $symbols);
 
 
-$new_password = [];
+$rand_char = [];
 
 // Ciclo per randomizzare e pushare
-for ($i = 0; $i < 10; $i++){
+for ($i = 0; $i < $user_number; $i++){
     $key = array_rand($characters);
     $v = $characters[$key];
-    array_push($new_password, $v);
+    array_push($rand_char, $v);
     
 };
 
-var_dump($new_password);
-
-
+// Trasformare array in stringa
+$new_password = implode($rand_char);
 
 
 ?>
@@ -30,9 +31,9 @@ var_dump($new_password);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <p>  <?= $new_password ?> </p>
 </body>
 </html>
